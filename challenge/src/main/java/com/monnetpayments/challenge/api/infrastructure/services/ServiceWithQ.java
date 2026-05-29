@@ -8,10 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class ServiceWithQ implements Service {
 
     @Autowired
-    Q getQ;
+    Q getQ3;
 
     @Override
     public String doAGreet() {
-        return getQ.greet();
+        return getQ3.greet();
     }
 }
