@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public final class Config {
+public class Config {
 
     @Bean
     Q getQ(){
@@ -21,7 +21,7 @@ public final class Config {
     }
 
     @Bean
-    Q getQ3(){
-        return new UppercaseQ(new SpainQ());
+    Q getQ3(Q getQ2){
+        return new UppercaseQ(getQ2);
     }
 }
